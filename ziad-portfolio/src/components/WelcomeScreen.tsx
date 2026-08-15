@@ -1,8 +1,6 @@
 import { useEffect, useState } from 'react';
 import { AnimatePresence, motion, type Variants } from 'framer-motion';
 import { Code2, GitBranch, Globe, type LucideIcon, User } from 'lucide-react';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 
 type WelcomeScreenProps = {
   onLoadingComplete?: () => void;
@@ -98,7 +96,6 @@ export function WelcomeScreen({ onLoadingComplete }: WelcomeScreenProps) {
   }, [isLoading]);
 
   useEffect(() => {
-    AOS.init({ duration: 800, once: true, easing: 'ease-out-cubic' });
     const timer = window.setTimeout(() => setIsLoading(false), 3200);
 
     return () => window.clearTimeout(timer);
@@ -156,7 +153,7 @@ export function WelcomeScreen({ onLoadingComplete }: WelcomeScreenProps) {
               <div className="inline-flex items-center gap-2 rounded-full border border-cyan-500/20 bg-[#0d1117]/60 px-5 py-2.5 backdrop-blur-md">
                 <Globe className="animate-spin-slow h-4 w-4 text-cyan-400" />
                 <span className="font-mono text-sm tracking-widest text-cyan-400 sm:text-base md:text-lg">
-                  <TypewriterEffect text="WWW.ZIAD.DIGITAL" />
+                  <TypewriterEffect text="WWW.ZIAD.DEV" />
                 </span>
               </div>
             </motion.div>

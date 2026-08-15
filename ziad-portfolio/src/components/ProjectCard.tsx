@@ -6,8 +6,8 @@ type ProjectCardProps = {
 };
 
 export function ProjectCard({ project }: ProjectCardProps) {
-  const techStack = (Array.isArray(project.tech_stack) ? project.tech_stack : project.tech_stack.split(','))
-    .map((tech) => tech.trim())
+  const techStack = project.tech_stack
+    .map((tech: string) => tech.trim())
     .filter(Boolean)
     .slice(0, 4);
   const date = project.created_at
@@ -34,7 +34,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
 
         {techStack.length > 0 && (
           <div className="mb-4 flex flex-wrap gap-1.5">
-            {techStack.map((tech) => (
+            {techStack.map((tech: string) => (
               <span key={tech} className="rounded-full border border-cyan-800/50 bg-cyan-950/40 px-2 py-0.5 text-[10px] text-cyan-400">
                 {tech}
               </span>

@@ -19,7 +19,7 @@ export function BackgroundEffect() {
   const floatingAnimation = reduceMotion ? undefined : { y: [0, -24, 8], x: [0, 12, -6] };
 
   return (
-    <div className="pointer-events-none fixed inset-0 z-0 overflow-hidden bg-[#030712]" aria-hidden="true">
+    <div className="pointer-events-none fixed inset-0 z-0 overflow-hidden bg-[#0B0F17]" aria-hidden="true">
       <div
         className="absolute inset-0 opacity-40"
         style={{

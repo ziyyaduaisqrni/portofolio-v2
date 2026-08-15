@@ -83,7 +83,7 @@ export function PortfolioShowcase() {
         <div className="mb-8 flex flex-col gap-4 rounded-[2rem] border border-white/10 bg-white/5 px-3 py-4 backdrop-blur-xl shadow-inner shadow-slate-950/30 sm:flex-row sm:items-center sm:justify-between sm:px-5">
           <div className="space-y-2">
             <p className="text-xs uppercase tracking-[0.35em] text-slate-400/90">EXPLORE MY WORK</p>
-            <h2 className="text-3xl font-semibold tracking-tight text-white sm:text-4xl">Showcasing featured projects, skills, and validated certifications.</h2>
+            <h2 className="text-3xl font-semibold tracking-tight text-white sm:text-4xl">Showcase Karya, Skill &amp; Sertifikasi.</h2>
           </div>
           <div className="flex flex-wrap gap-3 overflow-x-auto rounded-[1.5rem] bg-slate-950/80 px-2 py-2 shadow-[inset_0_1px_0_rgba(255,255,255,0.04)]">
             {tabs.map((tab) => (
@@ -110,9 +110,9 @@ export function PortfolioShowcase() {
               <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
                 <div>
                   <p className="text-sm uppercase tracking-[0.35em] text-neon-blue/80">SELECTED PROJECTS</p>
-                  <h3 className="text-2xl font-semibold text-white sm:text-3xl">Featured work crafted with precision and modern tech stack.</h3>
+                  <h3 className="text-2xl font-semibold text-white sm:text-3xl">Project Pilihan &amp; Hasil Karya.</h3>
                 </div>
-                <p className="max-w-2xl text-sm leading-6 text-slate-400">Kumpulan projek pilihan yang dilengkapi dengan live preview, repositori kode, serta detail teknologi yang digunakan.</p>
+                <p className="max-w-2xl text-sm leading-6 text-slate-400">Beberapa projek terbaik yang pernah saya buat, lengkap dengan live demo dan source code-nya.</p>
               </div>
 
               {loadingProjects ? (
@@ -133,10 +133,10 @@ export function PortfolioShowcase() {
             <div className="space-y-6">
               <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
                 <div>
-                  <p className="text-sm uppercase tracking-[0.35em] text-neon-blue/80">Verified credentials</p>
-                  <h3 className="text-2xl font-semibold text-white sm:text-3xl">Certificates that prove real learning and modern workflows.</h3>
+                  <p className="text-sm uppercase tracking-[0.35em] text-neon-blue/80">CERTIFICATES</p>
+                  <h3 className="text-2xl font-semibold text-white sm:text-3xl">Bukti Skill &amp; Validasi Sertifikat.</h3>
                 </div>
-                <p className="max-w-2xl text-sm leading-6 text-slate-400">Each certificate card is designed to feel premium, easy to scan, and perfect for showcasing expertise.</p>
+                <p className="max-w-2xl text-sm leading-6 text-slate-400">Lisensi dan sertifikat resmi dari berbagai pelatihan.</p>
               </div>
 
               {loadingCertificates ? (
@@ -176,10 +176,10 @@ export function PortfolioShowcase() {
             <div className="space-y-6">
               <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
                 <div>
-                  <p className="text-sm uppercase tracking-[0.35em] text-neon-blue/80">Tech Stack</p>
-                  <h3 className="text-2xl font-semibold text-white sm:text-3xl">A compact toolkit of modern development skills.</h3>
+                  <p className="text-sm uppercase tracking-[0.35em] text-neon-blue/80">TECH STACK</p>
+                  <h3 className="text-2xl font-semibold text-white sm:text-3xl">Tech Stack &amp; Tools yang Sering Dipakai.</h3>
                 </div>
-                <p className="max-w-2xl text-sm leading-6 text-slate-400">The badges below are styled for clarity and polished interaction on desktop and mobile.</p>
+                <p className="max-w-2xl text-sm leading-6 text-slate-400">Kumpulan teknologi dan tools pendukung buat bikin aplikasi web modern.</p>
               </div>
 
               <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">

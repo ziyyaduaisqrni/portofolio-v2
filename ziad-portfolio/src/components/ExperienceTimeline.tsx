@@ -5,13 +5,14 @@ import { useScrollReveal } from '../hooks/useScrollReveal';
 const experienceItems = [
   {
     id: 'informatics-study',
-    title: '[Nama Kampus/Sekolahmu]',
+    title: 'UNIVERSITAS SUNAN KALI JAGA',
     subtitle: 'Informatics / Computer Science Student',
     date: '2022 – Present',
     description:
       'Mengembangkan pemahaman dasar software engineering dengan fokus pada arsitektur frontend yang rapi, antarmuka responsif, serta alur kerja tim modern.',
     accent: 'from-cyan-400 via-sky-400 to-blue-500',
     logo: 'II',
+    logoImage: '/logo-uin.png',
     badge: 'ACADEMIC',
     gridSpan: 'sm:col-span-2 xl:col-span-1',
   },
@@ -24,6 +25,7 @@ const experienceItems = [
       'Mengerjakan platform komunitas pesisir dengan alur konten yang rapi, sinkronisasi data berbasis Supabase, serta alat admin yang responsif.',
     accent: 'from-violet-400 via-fuchsia-400 to-pink-500',
     logo: 'KB',
+    logoImage: 'kampung bahari.png',
     badge: 'FEATURED PROJECT',
     gridSpan: 'sm:col-span-1 xl:col-span-2',
   },
@@ -36,6 +38,7 @@ const experienceItems = [
       'Merancang sistem antarmuka berbasis QR yang intuitif, mengutamakan kemudahan navigasi dan pengalaman pengguna yang cepat.',
     accent: 'from-emerald-400 via-teal-400 to-cyan-400',
     logo: 'QR',
+    logoImage: 'qris.png',
     badge: 'UI/UX DESIGN',
   },
   {
@@ -47,6 +50,7 @@ const experienceItems = [
       'Berfokus pada eksplorasi teknologi baru, peningkatan kualitas kode, serta penerapan best practices dalam pengembangan web modern.',
     accent: 'from-slate-400 via-slate-300 to-slate-200',
     logo: 'GF',
+    logoImage: '11.png',
     badge: 'CORE STRATEGY',
   },
 ];
@@ -86,7 +90,15 @@ export function ExperienceTimeline() {
                 className="flex h-16 w-16 items-center justify-center rounded-3xl text-lg font-semibold text-white shadow-[0_0_0_6px_rgba(255,255,255,0.03)]"
                 style={{ backgroundImage: `linear-gradient(135deg, ${item.accent})` }}
               >
-                {item.logo}
+                {item.logoImage ? (
+                  <img
+                    src={item.logoImage}
+                    alt={`Logo ${item.title}`}
+                    className="h-full w-full rounded-3xl object-cover"
+                  />
+                ) : (
+                  item.logo
+                )}
               </div>
               <div className="min-w-0">
                 <p className="text-sm font-semibold uppercase tracking-[0.35em] text-slate-400">{item.badge}</p>
